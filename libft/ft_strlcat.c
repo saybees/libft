@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/27 23:11:29 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 19:11:26 by sabrown          ###   ########.fr       */
+/*   Created: 2025/04/29 21:45:17 by sabrown           #+#    #+#             */
+/*   Updated: 2025/04/29 22:04:25 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void    *ft_memset(void *s, int c, size_t n)
+size_t      ft_strlcat(char *dest, const char *src, size_t size)
 {
-    size_t      i;
-    char    *str;
     
-    i = 0;
-    str = (char *)s;
-    while (str[i] || i < n - 1)
-    {
-        str[i] = c;
-        i++;
-    }
-    return (str);
 }

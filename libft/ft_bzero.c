@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/27 23:11:29 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 19:11:26 by sabrown          ###   ########.fr       */
+/*   Created: 2025/04/29 19:06:37 by sabrown           #+#    #+#             */
+/*   Updated: 2025/04/29 19:14:31 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include <strings.h>
 
-void    *ft_memset(void *s, int c, size_t n)
+void    bzero(void *s, size_t n)
 {
-    size_t      i;
     char    *str;
-    
-    i = 0;
+    size_t      i;
+
     str = (char *)s;
+    i = 0;
     while (str[i] || i < n - 1)
     {
-        str[i] = c;
+        str[i] = '\0';
         i++;
     }
-    return (str);
 }

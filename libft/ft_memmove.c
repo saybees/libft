@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/27 23:11:29 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 19:11:26 by sabrown          ###   ########.fr       */
+/*   Created: 2025/04/29 19:40:00 by sabrown           #+#    #+#             */
+/*   Updated: 2025/04/29 19:41:27 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void    *ft_memset(void *s, int c, size_t n)
+void    *memmove(void *dest, const void *src, size_t n)
 {
-    size_t      i;
-    char    *str;
     
-    i = 0;
-    str = (char *)s;
-    while (str[i] || i < n - 1)
-    {
-        str[i] = c;
-        i++;
-    }
-    return (str);
 }
