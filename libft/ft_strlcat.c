@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 21:45:17 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 22:04:25 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/04/30 20:40:41 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,20 @@
 
 size_t      ft_strlcat(char *dest, const char *src, size_t size)
 {
-    
+    size_t      i;
+    size_t      j;
+
+    i = ft_strlen(dest);
+    j = 0;
+    if (size == 0)
+        return (ft_strlen(src));
+    if (size < i)
+        return (i + size);
+    while (src[j] && i + j < size - 1)
+    {
+        dest[i + j] = src[j];
+        j++;
+    }
+    dest[i + j] = '\0';
+    return (i + ft_strlen(src));
 }

@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/27 21:23:48 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/30 21:05:58 by sabrown          ###   ########.fr       */
+/*   Created: 2025/04/30 20:47:53 by sabrown           #+#    #+#             */
+/*   Updated: 2025/04/30 22:14:21 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isdigit(int c)
-{
-    unsigned char    a;
+#include <stdlib.h>
 
-    a = (unsigned char)c;
-    if (a >= '0' && a <= '9')
-        return (a);
-    return (0);
+int     ft_atoi(const char *nptr)
+{
+
 }

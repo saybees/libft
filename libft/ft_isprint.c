@@ -6,20 +6,16 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 23:06:13 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/27 23:09:38 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/04/30 21:07:24 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isprint(char *str)
+int     ft_isprint(int c)
 {
-    int     i;
+    unsigned char    a;
 
-    i = 0;
-    while (str[i])
-    {
-        if (str[i] > ' ' && str[i] < '~')
-            return (1);
-        i++;
-    }
+    a = (unsigned char)c;
+    if (a >= ' ' && a <= '~')
+        return (a);
     return (0);
 }

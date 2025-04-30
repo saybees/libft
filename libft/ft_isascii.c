@@ -6,20 +6,16 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 22:50:55 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/27 22:53:39 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/04/30 21:04:39 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isascii(char *str)
+int     ft_isascii(int c)
 {
-    int     i;
+    unsigned char    a;
 
-    i = 0;
-    while (str[i])
-    {
-        if (str[i] > 0 && str[i] < 127)
-            return (1);
-        i++;
-    }
+    a = (unsigned char)c;
+    if (a >= 0 && a <= 127)
+        return (a + 1);
     return (0);
 }

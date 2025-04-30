@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/27 21:23:48 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/30 21:05:58 by sabrown          ###   ########.fr       */
+/*   Created: 2025/04/30 20:45:53 by sabrown           #+#    #+#             */
+/*   Updated: 2025/04/30 20:53:30 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isdigit(int c)
+int     ft_toupper(int c)
 {
-    unsigned char    a;
+    char    a;
 
-    a = (unsigned char)c;
-    if (a >= '0' && a <= '9')
-        return (a);
-    return (0);
+    a = (char)c;
+    if (a >= 'a' && a <= 'z')
+        a -= 32;
+    c = (int)a;
+    return (c);
 }

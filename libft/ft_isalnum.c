@@ -6,21 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 21:31:32 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/27 22:49:33 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/04/30 21:00:20 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int     ft_isalnum(char *str)
+int     ft_isalnum(int c)
 {
-    int     i;
-
-    i = 0;
-    while (str[i])
-    {
-        if ((str[i] > '0' && str[i] < '9') || (str[i] > 'a' && str[i] < 'z') \
-            || (str[i] > 'A' && str[i] < 'Z'))
-            return (1);
-        i++;
-    }
+    if (ft_isalpha(c) || ft_isdigit(c))
+        return (c);
     return (0);
 }
