@@ -6,7 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 02:46:04 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/07 02:58:29 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/07 03:16:33 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef LIBFT_H
+# define LIBFT_H
+
+
+
+#endif
