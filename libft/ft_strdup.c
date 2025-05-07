@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/30 20:47:53 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/06 23:10:11 by sabrown          ###   ########.fr       */
+/*   Created: 2025/05/07 02:24:42 by sabrown           #+#    #+#             */
+/*   Updated: 2025/05/07 02:30:30 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <string.h>
 
-int     ft_atoi(const char *nptr)
+char    *ft_strdup(const char *s)
 {
+    char    *dup;
     int     i;
-	int     nb;
-	int     sign;
-
-	i = 0;
-	nb = 0;
-	sign = 1;
-	while ((8 < nptr[i] && nptr[i] < 14) || nptr[i] == 32)
-		i++;
-	if (nptr[i] == '-')
-		sign = sign * -1;
-	while ('0' <= nptr[i] && nptr[i] <= '9')
-	{
-		nb = (nb * 10) + (nptr[i] - 48);
-		i++;
-	}
-	return (nb * sign);
+    
+    i = 0;
+    dup = malloc(sizeof(char) * (ft_strlen(s) + 1));
+    if (!dup)
+        return (0);
+    while (s[i])
+    {
+        dup[i] = s[i];
+        i++;
+    }
+    dup[i] = '\0';
+    return (dup);
 }
