@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 23:10:10 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/30 20:38:27 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:47:22 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t     ft_strlen(const char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:16:12 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 21:25:55 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:46:27 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {

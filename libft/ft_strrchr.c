@@ -6,13 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:46:40 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/06 23:38:11 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:47:35 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-char    *strrchr(const char *s, int c)
+char    *ft_strrchr(const char *s, int c)
 {
     int     i;
     unsigned char    a;

@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 23:11:29 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 19:11:26 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:46:33 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void    *ft_memset(void *s, int c, size_t n)
 {

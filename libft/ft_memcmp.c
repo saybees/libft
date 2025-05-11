@@ -6,7 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:47:26 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/30 20:47:27 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:46:24 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int		ft_memcmp(const void s1, const void s2, size_t n)
+{
+	
+}

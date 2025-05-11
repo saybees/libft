@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 02:24:42 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/07 02:30:30 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:47:03 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char    *ft_strdup(const char *s)
 {

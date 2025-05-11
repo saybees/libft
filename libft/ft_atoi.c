@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:47:53 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/06 23:10:11 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:43:41 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int     ft_atoi(const char *nptr)
 {

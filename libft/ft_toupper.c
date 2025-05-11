@@ -6,9 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:45:53 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/30 20:53:30 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:47:52 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int     ft_toupper(int c)
 {

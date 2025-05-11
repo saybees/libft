@@ -6,13 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 00:55:36 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/07 00:58:14 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:49:54 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-void    *calloc(size_t nmeb, size_t size)
+void    *ft_calloc(size_t nmeb, size_t size)
 {
     
 }

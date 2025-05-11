@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:06:37 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 19:14:31 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:44:27 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
 
 void    bzero(void *s, size_t n)
 {

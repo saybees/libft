@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:40:00 by sabrown           #+#    #+#             */
-/*   Updated: 2025/04/29 19:41:27 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:46:30 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void    *memmove(void *dest, const void *src, size_t n)
 {

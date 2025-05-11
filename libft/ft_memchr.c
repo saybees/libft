@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:47:12 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/07 00:47:39 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:46:19 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void    *ft_memchr(const void *s, int c, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:47:40 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/06 23:21:58 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 00:47:32 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char    *ft_strnstr(const char *big, const char *little, size_t len)
 {
