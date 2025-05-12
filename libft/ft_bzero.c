@@ -6,13 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:06:37 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 00:44:27 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 02:25:48 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    bzero(void *s, size_t n)
+void    ft_bzero(void *s, size_t n)
 {
     char    *str;
     size_t      i;
