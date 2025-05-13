@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 02:46:04 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 02:26:42 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/12 15:59:59 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
 int             ft_strncmp(const char *s1, const char *s2, size_t n);
 void    *ft_memchr(const void *s, int c, size_t n);
-int             ft_memcmp(const void s1, const void s2, size_t n);
+int             ft_memcmp(const void *s1, const void *s2, size_t n);
 char    *ft_strnstr(const char *big, const char *little, size_t len);
 int             ft_atoi(const char *nptr);
 void    *ft_calloc(size_t nmeb, size_t size);
