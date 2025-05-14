@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 23:10:10 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 00:47:22 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/15 01:17:59 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t     ft_strlen(const char *str)
 {
-    size_t     i;
+    int     i;
 
     i = 0;
     while (str[i])

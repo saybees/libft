@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 02:24:42 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 03:09:08 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/15 01:17:26 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char    *ft_strdup(const char *s)
 {
     char    *dup;
-    size_t     i;
+    int     i;
     
     i = 0;
     dup = malloc(sizeof(char) * (ft_strlen(s) + 1));
