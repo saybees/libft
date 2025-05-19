@@ -6,18 +6,15 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 21:11:52 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 00:44:40 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 02:13:15 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    unsigned char    a;
-
-    a = (unsigned char)c;
-    if ((a > 'A' && a < 'Z') || (a > 'a' && a < 'z'))
-        return (a);
-    return (0);
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	return (0);
 }

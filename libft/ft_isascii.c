@@ -6,18 +6,15 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 22:50:55 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 00:44:45 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 02:12:01 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int     ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    unsigned char    a;
-
-    a = (unsigned char)c;
-    if (a >= 0 && a <= 127)
-        return (a + 1);
-    return (0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

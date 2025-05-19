@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 00:47:37 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 00:47:37 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 01:41:41 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*new;
-	size_t		i;
-	size_t		j;
-	size_t		l;
+	int		i;
+	int		j;
+	int		l;
 
 	i = 0;
 	j = ft_strlen(s1);

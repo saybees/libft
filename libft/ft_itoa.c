@@ -6,13 +6,13 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 00:45:22 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 00:45:22 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 01:20:39 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_numberlen(int n)
+int	ft_numberlen(int n)
 {
 	int		l;
 
@@ -47,7 +47,7 @@ void	ft_strfill(char *str, int n, int l)
 	i = 0;
 	if (n < 0)
 	{
-		str[i] = "-";
+		str[i] = '-';
 		n *= -1;
 		i++;
 		l--;
@@ -56,7 +56,7 @@ void	ft_strfill(char *str, int n, int l)
 	while (l != 0)
 	{
 		str[i] = n / ft_power(10, l);
-		n = n - 
+		n = n - ((int)str[i] * ft_power(10, l));
 		i++;
 		l--;
 	}
@@ -71,5 +71,6 @@ char	*ft_itoa(int n)
 	str = malloc(sizeof(char) * l + 1);
 	if (!str)
 		return (NULL);
-
+	ft_strfill(str, n, l);
+	return (str);
 }

@@ -6,17 +6,17 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 02:49:13 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/14 00:57:16 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 01:16:10 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-    char	*new;
-	size_t		i;
-	size_t		j;
+	char	*new;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

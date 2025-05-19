@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/12 02:05:40 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/12 02:05:40 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 01:21:13 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	
+	while (lst)
+	{
+		(*f)(lst->content);
+		lst = lst->next;
+	}
 }

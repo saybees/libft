@@ -6,15 +6,15 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 00:55:36 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/13 18:26:35 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/16 01:18:51 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_calloc(size_t nmeb, size_t size)
+void	*ft_calloc(size_t nmeb, size_t size)
 {
-    size_t		total;
+	size_t	total;
 	void	*mem;
 
 	total = nmeb * size;
