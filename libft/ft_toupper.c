@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:45:53 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/16 01:43:23 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/21 00:31:37 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,8 @@
 
 int	ft_toupper(int c)
 {
-	char	a;
-
-	a = (char)c;
-	if (a >= 'a' && a <= 'z')
-		a -= 32;
-	c = (int)a;
-	return (c);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else
+		return (c);
 }

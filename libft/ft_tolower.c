@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 20:46:08 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/16 01:42:48 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/21 00:32:10 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,8 @@
 
 int	ft_tolower(int c)
 {
-	char	a;
-
-	a = (char)c;
-	if (a >= 'A' && a <= 'Z')
-		a += 32;
-	c = (int)a;
-	return (c);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	else
+		return (c);
 }

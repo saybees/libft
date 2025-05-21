@@ -16,13 +16,12 @@ int	ft_numberlen(int n)
 {
 	int		l;
 
-	l = 1;
+	l = 0;
+	if (n == 0)
+		return (1);
 	if (n < 0)
-	{
 		l++;
-		n *= -1;
-	}
-	while (n > 1)
+	while (n)
 	{
 		n = n / 10;
 		l++;
@@ -30,47 +29,31 @@ int	ft_numberlen(int n)
 	return (l);
 }
 
-int	ft_power(int nb, int power)
-{
-	if (power < 0)
-		return (0);
-	if (power == 0)
-		return (1);
-	else
-		return (nb * ft_power(nb, power - 1));
-}
-
-void	ft_strfill(char *str, int n, int l)
-{
-	int		i;
-
-	i = 0;
-	if (n < 0)
-	{
-		str[i] = '-';
-		n *= -1;
-		i++;
-		l--;
-	}
-	l--;
-	while (l != 0)
-	{
-		str[i] = n / ft_power(10, l);
-		n = n - ((int)str[i] * ft_power(10, l));
-		i++;
-		l--;
-	}
-}
-
 char	*ft_itoa(int n)
 {
 	char	*str;
+	long	nbr;
+	int		i;
 	int		l;
 
+	i = 0;
 	l = ft_numberlen(n);
-	str = malloc(sizeof(char) * l + 1);
+	str = malloc(sizeof(char) * (l + 1));
 	if (!str)
 		return (NULL);
-	ft_strfill(str, n, l);
+	nbr = (long) n;
+	if (nbr == 0)
+		str[0] = '0';
+	if (nbr < 0)
+	{
+		str[i] = '-';
+		nbr *= -1;
+	}
+	while (nbr)
+	{
+		str[l - i++ - 1] = (nbr % 10) + 48;
+		nbr /= 10;
+	}
+	str[l] = '\0';
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: sabrown <sabrown@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/07 00:55:36 by sabrown           #+#    #+#             */
-/*   Updated: 2025/05/16 01:18:51 by sabrown          ###   ########.fr       */
+/*   Updated: 2025/05/21 00:50:20 by sabrown          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_calloc(size_t nmeb, size_t size)
 	void	*mem;
 
 	total = nmeb * size;
-	if (total == 0)
-		return (NULL);
 	mem = malloc(total);
 	if (!mem)
 		return (NULL);
