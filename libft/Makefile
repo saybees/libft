@@ -59,7 +59,7 @@ SRCS_BONUS	=	ft_lstnew_bonus.c \
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
-%.o: %.c
+%.o: %.c $(INCLUDES)
 		$(CC) $(CFLAGS) -c $< -o $@
 
 all : $(NAME)

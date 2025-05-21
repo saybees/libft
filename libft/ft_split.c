@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_endword(const char *s, char c)
+static int	ft_endword(const char *s, char c)
 {
 	int		i;
 
@@ -22,7 +22,7 @@ int	ft_endword(const char *s, char c)
 	return (i);
 }
 
-int	ft_countwords(char const *s, char c)
+static int	ft_countwords(char const *s, char c)
 {
 	int		i;
 	int		n;
@@ -43,7 +43,7 @@ int	ft_countwords(char const *s, char c)
 	return (n);
 }
 
-void	ft_free(char **s)
+static void	ft_free(char **s)
 {
 	int		i;
 
@@ -56,7 +56,7 @@ void	ft_free(char **s)
 	free(s);
 }
 
-char	*ft_newstr(const char *s, char c)
+static char	*ft_newstr(const char *s, char c)
 {
 	char	*str;
 	int		len;
